@@ -25,7 +25,7 @@ export default defineConfig({
 		'typhur-ui': path.join(__dirname, 'packages/typhur-ui/src')
 	},
 	themeConfig: {
-		name: 'typhur-common',
+		name: 'Typhur',
 		carrier: 'dumi', // 设备状态栏左侧的文本内容
 		hd: true,
 		rtl: true,
