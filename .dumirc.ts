@@ -5,27 +5,27 @@ let base: string | undefined
 let publicPath: string | undefined
 
 if (process.env.PREVIEW !== '1') {
-	base = '/@typhur-shopify:ui/'
-	publicPath = '/@typhur-shopify:ui/'
+	base = '/typhur-common/'
+	publicPath = '/typhur-common/'
 }
 
 export default defineConfig({
 	base,
 	publicPath,
-	title: 'Perfect Design', // 站点名称
+	title: 'Typhur Common', // 站点名称
 	outputPath: 'docs-dist', // 输出文件夹
 	resolve: {
 		docDirs: ['docs'],
 		atomDirs: [
-			{ type: 'component', dir: '/packages/@typhur-shopify:ui/src/components' }
+			{ type: 'component', dir: '/packages/typhur-ui/src/components' }
 		],
 		codeBlockMode: 'passive'
 	},
 	alias: {
-		perfectD: path.join(__dirname, 'packages/@typhur-shopify:ui/src')
+		'typhur-ui': path.join(__dirname, 'packages/typhur-ui/src')
 	},
 	themeConfig: {
-		name: 'Perfect D',
+		name: 'typhur-common',
 		carrier: 'dumi', // 设备状态栏左侧的文本内容
 		hd: true,
 		rtl: true,

@@ -17,6 +17,8 @@ node_modules
 node_modules/
 dist/
 .dumi/
+docs-dist/
 
 packages/node_modules/
 packages/dist/
+.DS_Store
